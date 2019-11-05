@@ -15,7 +15,7 @@
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-				<title>Contato</title>
+				<title>Códigos</title>
 				<style>
 				  .carousel-inner img {
 				    width: 100%;
@@ -61,10 +61,10 @@
 
 		
 			<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: steelblue">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<button class="navbar-toggler" type="button" data-toggle="collapse">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<div class="collapse navbar-collapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Quem Somos</a>
@@ -104,124 +104,22 @@
 
 			<br>
 
-	<div class="col-sm-12 text-center">
-		<h2>Formulário para contato</h2>
-	</div><br>
 
-<div class="container-fluid">
-<form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-sm-12">
-      <label>Nome completo</label>
-      <input class="form-control" placeholder="Digite seu nome" required>
-      <div class="valid-feedback">
-        OK!
-   	  </div>
-      <div class="invalid-feedback">
-        Por favor digite seu nome completo.
-      </div>
-    </div>
-
-    <div class="col-sm-7">
-      <label>E-mail</label>
-      <input class="form-control" placeholder="Digite seu e-mail" required>
-      <div class="invalid-feedback">
-        Por favor, digite seu e-mail.
-      </div>
-    </div>
-    <div class="col-sm-5">
-      <label>Provedor</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">@</span>
-        </div>
-        <input class="form-control" placeholder="provedor.com.br" required>
-        <div class="valid-feedback">
-          OK
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label>Cidade</label>
-      <input type="text" class="form-control" placeholder="Cidade" required>
-      <div class="invalid-feedback">
-        Por favor, informe uma cidade válida.
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <label>Estado</label>
-      
-      <select class="custom-select">
-		  <option selected>Selecione o Estado</option>
-		  <option>PR</option>
-		  <option>SC</option>
-		  <option>RS</option>
-	  </select>
-    </div>
-    <div class="col-sm-3">
-      <label>CEP</label>
-      <input class="form-control" id="validationCustom05" placeholder="CEP" required>
-      <div class="invalid-feedback">
-        Por favor, informe um CEP válido.
-      </div>
-    </div>
-
-
-<div class="custom-file">
-  <input type="file" class="custom-file-input">
-  <label class="custom-file-label">Selecionar arquivo se desejar.</label>
-</div>
-  </div>
-  
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox">
-      <label>Aceito receber informações por e-mail.
-      </label>
-    </div>
-  </div>
-
-
-<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text">Digite sua Mensagem</span>
-  </div>
-  <textarea class="form-control"></textarea>
-</div>
-
-<br>
-
-  <button class="btn btn-primary" type="submit">Enviar</button>
-  <button class="btn btn-primary" type="reset">Cancelar</button>
-</form>
-<br><br>
-<script>
-// JavaScript para desativar envios de campos invalidos.
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    var forms = document.getElementsByClassName('needs-validation');
-    // Faz um loop para verificar antes de enviar
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
-</div>
-
-	<div class="row-fluid">
+	 	
+		
+		<div class="row-fluid">
 			<div class="col-sm-12 alert alert-info">
 				<footer>Viagens - Turismo - Transporte Universitário</footer>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<address> Rua São José - 1779 - Canoinhas/SC
+				CEP - 89462-010</address>
+			</div>
+		</div>
+	</div>
+	
 </body>
-</html>
+</html>		
