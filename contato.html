@@ -10,7 +10,9 @@
 				<meta http-equiv="refresh" content="120">
 				<link rel="shortcut icon" href="bus_ico.ico">
 				<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-				<link href="https://fonts.googleapis.com/css?family=Concert+One|Merienda+One|Text+Me+One&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"> 
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -109,93 +111,96 @@
 	</div><br>
 
 <div class="container-fluid">
-<form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-sm-12">
-      <label>Nome completo</label>
-      <input class="form-control" placeholder="Digite seu nome" required>
-      <div class="valid-feedback">
-        OK!
-   	  </div>
-      <div class="invalid-feedback">
-        Por favor digite seu nome completo.
-      </div>
-    </div>
 
-    <div class="col-sm-7">
-      <label>E-mail</label>
-      <input class="form-control" placeholder="Digite seu e-mail" required>
-      <div class="invalid-feedback">
-        Por favor, digite seu e-mail.
-      </div>
-    </div>
-    <div class="col-sm-5">
-      <label>Provedor</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">@</span>
-        </div>
-        <input class="form-control" placeholder="provedor.com.br" required>
-        <div class="valid-feedback">
-          OK
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label>Cidade</label>
-      <input type="text" class="form-control" placeholder="Cidade" required>
-      <div class="invalid-feedback">
-        Por favor, informe uma cidade válida.
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <label>Estado</label>
-      
-      <select class="custom-select">
-		  <option selected>Selecione o Estado</option>
-		  <option>PR</option>
-		  <option>SC</option>
-		  <option>RS</option>
-	  </select>
-    </div>
-    <div class="col-sm-3">
-      <label>CEP</label>
-      <input class="form-control" id="validationCustom05" placeholder="CEP" required>
-      <div class="invalid-feedback">
-        Por favor, informe um CEP válido.
-      </div>
-    </div>
+<form action="/action_page.php" class="needs-validation" novalidate>
+    <div class="form-group">
+	  <div class="form-row">
+	    <div class="col-sm-12">
+	      <label>Nome completo</label>
+	      <input class="form-control" placeholder="Digite seu nome" required>
+	      <div class="valid-feedback">
+	        OK!
+	   	  </div>
+	      <div class="invalid-feedback">
+	        Por favor digite seu nome completo.
+	      </div>
+	    </div>
 
+	    <div class="col-sm-7">
+	      <label>E-mail</label>
+	      <input class="form-control" placeholder="Digite seu e-mail" required>
+	      <div class="invalid-feedback">
+	        Por favor, digite seu e-mail.
+	      </div>
+	    </div>
+	    <div class="col-sm-5">
+	      <label>Provedor</label>
+	      <div class="input-group">
+	        <div class="input-group-prepend">
+	          <span class="input-group-text">@</span>
+	        </div>
+	        <input class="form-control" placeholder="provedor.com.br" required>
+	        <div class="valid-feedback">
+	          OK
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="form-row">
+	    <div class="col-md-6 mb-3">
+	      <label>Cidade</label>
+	      <input type="text" class="form-control" placeholder="Cidade" required>
+	      <div class="invalid-feedback">
+	        Por favor, informe uma cidade válida.
+	      </div>
+	    </div>
+	    <div class="col-sm-3">
+	      <label>Estado</label>
+	      
+	      <select class="custom-select">
+			  <option selected>Selecione o Estado</option>
+			  <option>PR</option>
+			  <option>SC</option>
+			  <option>RS</option>
+		  </select>
+	    </div>
+	    <div class="col-sm-3">
+	      <label>CEP</label>
+	      <input class="form-control" id="validationCustom05" placeholder="CEP" required>
+	      <div class="invalid-feedback">
+	        Por favor, informe um CEP válido.
+	      </div>
+	    </div>
 
-<div class="custom-file">
-  <input type="file" class="custom-file-input">
-  <label class="custom-file-label">Selecionar arquivo se desejar.</label>
-</div>
-  </div>
-  
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox">
-      <label>Aceito receber informações por e-mail.
-      </label>
-    </div>
-  </div>
+	<div class="custom-file">
+	  <input type="file" class="custom-file-input">
+	  <label class="custom-file-label">Anexar arquivos se desejar.</label>
+	</div>
+	  </div>
+	  <br>
 
-
-<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text">Digite sua Mensagem</span>
-  </div>
-  <textarea class="form-control"></textarea>
-</div>
-
+	<div class="input-group">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text">Digite sua Mensagem</span>
+	  </div>
+	  <textarea class="form-control" rows="5"></textarea>
+	</div>
+	<br>
+	                                    
+	    <div class="custom-control custom-switch">
+	      <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+	      <label class="custom-control-label" for="switch1">Aceito receber informações por e-mail.</label>
+	    </div>
 <br>
 
   <button class="btn btn-primary" type="submit">Enviar</button>
   <button class="btn btn-primary" type="reset">Cancelar</button>
+
+
+</div>
 </form>
+
+
 <br><br>
 <script>
 // JavaScript para desativar envios de campos invalidos.

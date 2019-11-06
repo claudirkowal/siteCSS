@@ -10,7 +10,9 @@
 				<meta http-equiv="refresh" content="120">
 				<link rel="shortcut icon" href="bus_ico.ico">
 				<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-				<link href="https://fonts.googleapis.com/css?family=Concert+One|Merienda+One|Text+Me+One&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet"> 
+				<link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet"> 
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -110,6 +112,7 @@
 
 <div class="container-fluid">
 <form class="needs-validation" novalidate>
+	<div class="form-group">
   <div class="form-row">
     <div class="col-sm-4">
       <label>Nome</label>
@@ -134,12 +137,10 @@
     </div>
 
     <div class="col-sm-4">
-
 	  <p>Sexo</p>  	
-	  <form action="claudirtransportes.com.br">
 	    <div class="form-check-inline">
 	      <label class="form-check-label" for="masc">
-	        <input type="radio" class="form-check-input" name="optradio" value="option1" id="masc" checked>Masculino
+	        <input type="radio" class="form-check-input" name="optradio" value="option1" id="masc">Masculino
 	      </label>
 	    </div>
 	    <div class="form-check-inline">
@@ -149,11 +150,9 @@
 	    </div>
 	    <div class="form-check-inline">
 	      <label class="form-check-label" for="outro">
-	        <input type="radio" class="form-check-input" name="optradio" value="outro">Outro
+	        <input type="radio" class="form-check-input" id="outro" name="optradio" value="outro">Outro
 	    </label>
 	    </div>
-
-	  </form>
 </div>
 
 
@@ -170,7 +169,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text">@</span>
         </div>
-        <input class="form-control" placeholder="provedor.com.br" aria-describedby="inputGroupPrepend" required>
+        <input class="form-control" placeholder="provedor.com.br" required>
         <div class="valid-feedback">
           OK
         </div>
@@ -185,9 +184,9 @@
         Por favor, informe uma cidade válida.
       </div>
     </div>
+
     <div class="col-sm-3">
       <label>Estado</label>
-      
       <select class="custom-select">
 		  <option selected>Selecione o Estado</option>
 		  <option>PR</option>
@@ -195,6 +194,7 @@
 		  <option>RS</option>
 	  </select>
 	    </div>
+
 	    <div class="col-sm-3">
 	      <label>CEP</label>
 	      <input class="form-control" placeholder="CEP" required>
@@ -204,8 +204,9 @@
 	    </div>
 
 		 <div class="col-sm-6">
-		  <label>Assunto</label>
-			<select class="custom-select">
+		 	<label>Assunto</label>
+		  <select class="custom-select">
+			<option selected>Selecione o Estado</option>
 			<option>Viagem</option>
 			<option>Turismo</option>
 			<option>Transporte Universitário</option>
@@ -215,28 +216,25 @@
  <div class="col-sm-6">
   <label>Veículo</label>
 	<select class="custom-select">
+	<option selected>Selecione o Veículo</option>
 	<option>Van</option>
 	<option>Microonibus</option>
 	<option>Ônibus</option>
-</select>
-    </div>
+	</select>
 </div>
-
-<div class="container-fluid"></div>
-<div class="col-sm-12">
+</div>
+<br>
 <div class="input-group">
   <div class="input-group-prepend">
     <span class="input-group-text">Digite sua Mensagem</span>
   </div>
-  <textarea class="form-control"></textarea>
+  <textarea class="form-control" rows="5"></textarea>
 </div>
-</div>
-
-
 <br>
 
   <button class="btn btn-primary" type="submit">Enviar</button>
   <button class="btn btn-primary" type="reset">Cancelar</button>
+</div>
 </form>
 
 <br><br>
